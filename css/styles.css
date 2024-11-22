@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Fodno para el Carousel */
+.fondo-carousel {
+    padding: 10px; 
+    background: rgb(1,5,5);
+    background: linear-gradient(0deg, rgba(1,5,5,1) 0%, rgba(255,255,255,1) 100%);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Acomodamos el carrusel */
+#carouselExampleIndicators {
+    margin: 0 auto; /* Centra el carrusel vertical y horizontalmente */
+    max-width: 50%; /* Controla el ancho máximo del carrusel */
+}
+
+.carousel-inner img {
+    margin: 0 auto; /* Centra las imágenes dentro del carrusel */
+    border-radius: 10px;
+
+}
+
+/* Fondo para las cards */
+.fondo_cards {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,5,5,1) 96%);
+}
+
+/* Estilo para el contenedor ARTE  */
+#h2_card {
+    border: 1px solid #fff4;
+    border-radius: 10px;
+    /* background: rgb(101,108,116);
+    background: radial-gradient(circle, rgba(101,108,116,1) 9%, rgba(0,0,0,1) 95%); */
+    box-shadow: 0 0 20px #fff4;
+    background-color: #292a2a;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Acomodamos todo en columna cuando le aplicamos el flex */
+.card-body {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Container para acomodar los botones */
+.container_button {
+    margin-top: auto;
+}
+
+/* Estilo para los botones de COMPRAR en las CARDS */
+.button_comprar {
+    border-radius: 10px;
+}
+
+
+/* Ajustes para los testimonios */
+.testimonial-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .fondo-carousel {
+        min-height: 280px;
+        padding: 10px;
+    }
+
+    #carouselExampleIndicators {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 250px; /* Altura fija para móviles */
+        object-fit: cover;
+    }
+}
+
+/* Media query para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .fondo-carousel {
+        min-height: 350px;
+    }
+
+    #carouselExampleIndicators {
+        max-width: 80%;
+    }
+
+    .carousel-inner img {
+        height: 300px; /* Altura fija para tablets */
+        object-fit: cover;
+    }
+}
+
+/* Media query para pantallas grandes (1920px) */
+@media (min-width: 1920px) {
+    .fondo-carousel {
+        min-height: 700px; /* Aumentamos la altura para pantallas grandes */
+    }
+
+    #carouselExampleIndicators {
+        max-width: 70%; /* Reducimos el ancho máximo para que no se vea demasiado grande */
+    }
+
+    .carousel-inner img {
+        height: 600px; /* Altura ajustada para pantallas grandes */
+        object-fit: cover;
+    }
+
+    /* Ajustes adicionales para las cards */
+    .card {
+        margin: 20px; /* Más espacio entre cards */
+    }
+
+    #h2_card {
+        padding: 2rem; /* Más padding para el título */
+        margin: 0; /* Más margen vertical */
+    }
+
+    /* Ajuste para los testimonios */
+    .testimonial-section {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Cards más grandes */
+        gap: 30px; /* Más espacio entre testimonios */
+    }
+
+    /* Ajustes para el contenedor general */
+    .container {
+        max-width: 1800px; /* Contenedor más ancho para aprovechar el espacio */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
